@@ -43,7 +43,7 @@ This page provides users with more information about the salon, its history, phi
 
 **4.6. My Account Page:**
 
-This page allows users to create a profile, save their preferences, and view their appointment history. They can also update their contact information and password, as well as add or remove payment methods.
+This page allows users to create a profile. They can also update their appointment (book or cancle), contact information and password. 
 
 ## **5. Technical Requirements**
 
