@@ -2,7 +2,7 @@
 
 ## **1. Introduction**
 
-Hair salon web app is packed with a range of features designed to make hair care experience easier, more convenient, and more enjoyable than ever before. One of the key features of app is online booking system, which allows to book appointments with just a few clicks. It can easily find an available time that works for costimer, without having to pick up the phone or wait in line.
+Hair salon web app is packed with a range of features designed to make hair care experience easier for all genders, more convenient, and more enjoyable than ever before. One of the key features of app is online booking system, which allows to book appointments with just a few clicks. It can easily find an available time that works for costimer, without having to pick up the phone or wait in line.
 
 ## **2. Features**
 - Allow customers to book appointments
