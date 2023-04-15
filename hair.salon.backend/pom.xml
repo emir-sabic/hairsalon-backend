@@ -17,20 +17,35 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+<<<<<<< HEAD
 <!--		<dependency>-->
 <!--			<groupId>org.springframework.boot</groupId>-->
 <!--			<artifactId>spring-boot-starter-data-jpa</artifactId>-->
 <!--		</dependency>-->
+=======
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+>>>>>>> 64271191870c885418da104cee9a9ccd9bd1ec42
+		<dependency>
+			<grougitpId>org.springframework.boot</grougitpId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+<<<<<<< HEAD
 <!--		<dependency>-->
 <!--			<groupId>org.postgresql</groupId>-->
 <!--			<artifactId>postgresql</artifactId>-->
 <!--			<scope>runtime</scope>-->
 <!--		</dependency>-->
+=======
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+>>>>>>> 64271191870c885418da104cee9a9ccd9bd1ec42
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
