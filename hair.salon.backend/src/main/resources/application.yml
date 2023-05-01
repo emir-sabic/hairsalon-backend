@@ -1,0 +1,20 @@
+server:
+  port: ${APPLICATION_PORT:8080}
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hairsalon_db
+    username: postgres
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    openInView: false
+    show_sql: true
+    generate-ddl: true
+  data:
+    jpa:
+      repositories.enabled: true
+
+frontend:
+  url: ${FRONTEND_API_URL:"http://localhost:4200"}
