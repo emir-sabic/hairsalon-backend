@@ -1,4 +1,4 @@
-package com.hair.salon.backend;
+package com.hair.salon.backend.controllers;
 
 import com.hair.salon.backend.models.ServiceDto;
 import org.springframework.web.bind.annotation.GetMapping;

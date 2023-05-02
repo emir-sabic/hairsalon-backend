@@ -1,17 +1,15 @@
-package models;
+package com.hair.salon.backend.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.security.Provider;
-import java.sql.Time;
-import java.util.Date;
+
 @Getter
 @Setter
 @AllArgsConstructor
 public class AppointmentDto {
-    private String id;
+    private long id;
     private String service;
     private String name;
     private String time;
