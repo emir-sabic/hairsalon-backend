@@ -15,7 +15,6 @@ public class AppointmentService {
 
     private final AppointmentRepository appointmentRepository;
 
-
     public AppointmentService(AppointmentRepository appointmentRepository) {
         this.appointmentRepository = appointmentRepository;
     }
@@ -51,4 +50,6 @@ public class AppointmentService {
     public void deleteAppointment(long id) {
         System.out.println("Deleted " + id);
     }
+
+    
 }
