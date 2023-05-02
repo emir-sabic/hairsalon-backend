@@ -32,6 +32,4 @@ public class AppointmentEntity {
     @Column(name = "number")
     private String number;
 
-
-
 }

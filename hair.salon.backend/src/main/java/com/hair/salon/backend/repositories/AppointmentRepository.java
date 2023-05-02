@@ -8,4 +8,6 @@ import java.util.Optional;
 public interface AppointmentRepository extends JpaRepository<AppointmentEntity, Long> {
     Optional<AppointmentEntity> findById(long id);
     Optional<AppointmentEntity> findByService(String service);
+
+
 }

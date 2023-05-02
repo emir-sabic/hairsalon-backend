@@ -9,9 +9,7 @@ import java.util.List;
 @RequestMapping("/appointment")
 @RestController
 public class AppointmentCOntroller {
-
-     private final AppointmentService appointmentService;
-
+    private final AppointmentService appointmentService;
     public AppointmentCOntroller(AppointmentService appointmentService) {
         this.appointmentService = appointmentService;
     }

@@ -15,5 +15,4 @@ public class AppointmentDto {
     private String time;
     private String email;
     private String number;
-
 }
