@@ -19,6 +19,7 @@ public class AppointmentCOntroller {
         return appointmentService.createAppointment(appointmentDto);
     }
 
+    git 
     @GetMapping("/{appointmentId}/list")
     public List<AppointmentDto> getAppointments(@PathVariable long appointmentId) {
         return appointmentService.getAppointmentList();
