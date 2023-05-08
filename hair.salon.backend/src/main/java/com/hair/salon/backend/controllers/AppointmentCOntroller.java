@@ -14,12 +14,12 @@ public class AppointmentCOntroller {
         this.appointmentService = appointmentService;
     }
 
-
     @PostMapping
     public AppointmentDto createAppointment(@RequestBody AppointmentDto appointmentDto){
         return appointmentService.createAppointment(appointmentDto);
     }
 
+    git 
     @GetMapping("/{appointmentId}/list")
     public List<AppointmentDto> getAppointments(@PathVariable long appointmentId) {
         return appointmentService.getAppointmentList();
