@@ -51,5 +51,5 @@ public class AppointmentService {
         System.out.println("Deleted " + id);
     }
 
-    
+
 }
