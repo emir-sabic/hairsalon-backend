@@ -1,1 +1,0 @@
-web: java $JAVA_OPTS -jar target/hair.salon.backend-0.0.1-SNAPSHOT.jar
