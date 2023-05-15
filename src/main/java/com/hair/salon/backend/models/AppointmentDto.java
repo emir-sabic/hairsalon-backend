@@ -1,5 +1,6 @@
 package com.hair.salon.backend.models;
 
+import com.hair.salon.backend.models.entities.RoleEntity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -9,10 +10,14 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 public class AppointmentDto {
-    private long id;
-    private String service;
+    private Long id;
     private String name;
-    private String time;
     private String email;
-    private String number;
+    private String date;
+    private String time;
+    private String stylist;
+    private String service;
+
 }
+
+
