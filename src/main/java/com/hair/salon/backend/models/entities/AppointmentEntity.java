@@ -15,21 +15,24 @@ import lombok.Setter;
 public class AppointmentEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-
-    @Column(name = "service")
-    private String service;
+    private Long id;
 
     @Column(name = "name")
     private String name;
 
-    @Column(name = "time")
-    private String time;
-
     @Column(name = "email")
     private String email;
 
-    @Column(name = "number")
-    private String number;
+    @Column(name = "date")
+    private String date;
+
+    @Column(name = "time")
+    private String time;
+
+    @Column(name = "stylist")
+    private String stylist;
+
+    @Column(name = "service")
+    private String service;
 
 }
