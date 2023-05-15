@@ -1,6 +1,6 @@
 package com.hair.salon.backend.controllers;
 
-import com.hair.salon.backend.models.User;
+import com.hair.salon.backend.models.UserDto;
 import com.hair.salon.backend.services.UserService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,7 +18,7 @@ public class SignupController {
     }
 
     @PostMapping
-    public User createUser(@RequestBody User user) {
+    public UserDto createUser(@RequestBody UserDto user) {
         return userService.createUser(user);
     }
 }
