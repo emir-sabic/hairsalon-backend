@@ -7,13 +7,12 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-public class ServiceDto {
-    private int id;
+public class ServisDto {
+    private Long id;
     private String name;
 
     private String description;
 
-    private boolean available;
     private double price;
 
 }
