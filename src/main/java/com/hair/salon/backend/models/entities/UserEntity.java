@@ -10,7 +10,7 @@ import java.util.Collection;
 import java.util.List;
 
 @Entity
-@Table(name = "app_user", uniqueConstraints = @UniqueConstraint(columnNames = {"email", "nickname"}))
+@Table(name = "app_user", uniqueConstraints = @UniqueConstraint(columnNames = {"email", "username"}))
 @Getter
 @Setter
 @AllArgsConstructor
@@ -31,17 +31,12 @@ public class UserEntity implements UserDetails {
     @Column(name = "surname")
     private String surname;
 
-    @Column(name = "nickname")
-    private String nickname;
+    @Column(name = "username")
+    private String username;
 
     @Column(name = "password")
     private String password;
 
-    @Column(name = "age")
-    private Integer age;
-
-    @Column(name = "gender")
-    private String gender;
 
     @Enumerated(EnumType.STRING)
     private RoleEntity role;
