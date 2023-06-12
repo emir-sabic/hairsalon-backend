@@ -76,7 +76,7 @@ public class UserServiceUnitTest {
         UserDto resultUser = userService.getUser(id);
 
         // assert
-        assertThat(resultUser.getNickname()).isEqualTo("nickname1");
+        assertThat(resultUser.getUsername()).isEqualTo("nickname1");
     }
     @Test
     public void givenInvalidId_whenGetUser_thenExceptionShouldBeThrown() {
@@ -100,7 +100,7 @@ public class UserServiceUnitTest {
 
         // assert
         assertThat(resultUser).isNotNull();
-        assertThat(resultUser.getNickname()).isEqualTo(inputUserDto.getNickname());
+        assertThat(resultUser.getUsername()).isEqualTo(inputUserDto.getUsername());
         assertThat(resultUser.getId()).isNotEqualTo(0L);
     }
 
@@ -138,7 +138,7 @@ public class UserServiceUnitTest {
 
         // assert
         assertThat(resultUser).isNotNull();
-        assertThat(resultUser.getNickname()).isEqualTo(inputUserDto.getNickname());
+        assertThat(resultUser.getUsername()).isEqualTo(inputUserDto.getUsername());
         assertThat(resultUser.getId()).isEqualTo(id);
     }
 

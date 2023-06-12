@@ -17,21 +17,9 @@ public class UserDto {
     private String email;
     private String name;
     private String surname;
-    private String nickname;
+    private String username;
     private String password;
-    private Integer age;
-    private String gender;
     private RoleEntity role;
 
-    public UserDto(Long id, String email, String name, String surname, String nickname, RoleEntity role,Integer age,String gender) {
-        this.id=id;
-        this.email=email;
-        this.name=name;
-        this.surname=surname;
-        this.nickname=nickname;
-        this.role=role;
-        this.age=age;
-        this.gender=gender;
-    }
 
 }

@@ -51,7 +51,7 @@ public class UserService {
         entity.setEmail(userDto.getEmail());
         entity.setName(userDto.getName());
         entity.setSurname(userDto.getSurname());
-        entity.setNickname(userDto.getNickname());
+        entity.setUsername(userDto.getUsername());
         entity.setPassword(passwordEncoder.encode(userDto.getPassword()));
 
         UserEntity user = userRepository.save(entity);
@@ -77,19 +77,18 @@ public class UserService {
                 user.getEmail(),
                 user.getName(),
                 user.getSurname(),
-                user.getNickname(),
-                user.getRole(),
-                user.getAge(),
-                user.getGender());
+                user.getUsername(),
+                user.getPassword(),
+                user.getRole()
+              );
     }
     private UserEntity toEntity(UserDto userDto) {
         UserEntity user = new UserEntity();
         user.setEmail(userDto.getEmail());
         user.setName(userDto.getName());
         user.setSurname(userDto.getSurname());
-        user.setNickname(userDto.getNickname());
-        user.setAge(userDto.getAge());
-        user.setGender(userDto.getGender());
+        user.setUsername(userDto.getUsername());
+        user.setPassword(userDto.getPassword());
         user.setPassword(passwordEncoder.encode(userDto.getPassword()));
         return user;
     }
