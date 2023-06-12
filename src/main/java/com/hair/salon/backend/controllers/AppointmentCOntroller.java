@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 
-@RequestMapping("/appointment")
+@RequestMapping("/bookapointment")
 @RestController
 public class AppointmentCOntroller {
 
 
     private final AppointmentService appointmentService;
 
-    AppointmentCOntroller(AppointmentService appointmentService) {
+    public AppointmentCOntroller(AppointmentService appointmentService) {
         this.appointmentService = appointmentService;
     }
 
@@ -28,7 +28,7 @@ public class AppointmentCOntroller {
         return appointmentService.getAppointment(id);
     }
 
-    @PostMapping
+    @PostMapping("/bookapointment")
     public AppointmentDto createAppointment(@RequestBody AppointmentDto appointmentDto) {
         return appointmentService.createAppointment(appointmentDto);
     }

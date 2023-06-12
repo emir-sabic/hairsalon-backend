@@ -22,9 +22,9 @@ public class AppointmentService {
 
     public AppointmentDto createAppointment(AppointmentDto appointmentDto) {
         AppointmentEntity entity= toEntity(appointmentDto);
-        entity = appointmentRepository.save(entity);
+        AppointmentEntity entitet = appointmentRepository.save(entity);
 
-        return toDto(entity);
+        return toDto(entitet);
     }
 
 

@@ -4,19 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-
 @Getter
 @Setter
 @AllArgsConstructor
-public class AppointmentDto {
+public class ModelSignupDto {
     private Long id;
-    private String name;
+    private String fullname;
     private String email;
-    private String date;
-    private String time;
-    private String stylist;
-    private String service;
-
+    private String phonenumber;
+    private String age;
+    private String prevexp;
 }
-
-
