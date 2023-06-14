@@ -43,7 +43,7 @@ public class AppointmentServiceUnitTest {
     private AppointmentService appointmentService;
 
     @Test
-    public void givenUser_whenGetUserList_thenListShouldBeFound() {
+    public void givenAppointment_whenGetAppointmentList_thenListShouldBeFound() {
         // arrange
         Mockito.when(appointmentRepository.findAll())
                 .thenReturn(List.of(AppointmentTest.appointment()));
@@ -55,7 +55,7 @@ public class AppointmentServiceUnitTest {
         assertThat(returnedList).hasSize(1);
     }
     @Test
-    public void givenNoUser_whenGetUserList_thenListShouldBeEmpty() {
+    public void givenNoAppointment_whenGetAppointmentList_thenListShouldBeEmpty() {
         // act
         List<AppointmentDto> returnedList = appointmentService.getAppointmentList();
 
@@ -64,7 +64,7 @@ public class AppointmentServiceUnitTest {
     }
 
     @Test
-    public void givenValidId_whenGetUser_thenUserShouldBeFound() {
+    public void givenValidId_whenGetAppointment_thenAppointmentShouldBeFound() {
         // arrange
         long id = 1L;
         Mockito.when(appointmentRepository.findById(id))
@@ -77,14 +77,14 @@ public class AppointmentServiceUnitTest {
         assertThat(resultAppointment.getName()).isEqualTo("name1");
     }
     @Test
-    public void givenInvalidId_whenGetUser_thenExceptionShouldBeThrown() {
+    public void givenInvalidId_whenGetAppointment_thenExceptionShouldBeThrown() {
         assertThatThrownBy(() -> appointmentService.getAppointment(3L))
                 .isInstanceOf(RuntimeException.class)
                 .hasMessageContaining("Appointment not found");
     }
 
     @Test
-    public void givenUser_whenCreateUser_thenUserIsReturned() {
+    public void givenAppointment_whenCreateAppointment_thenAppointmentIsReturned() {
         // arrange
         AppointmentDto inputApointmentDto = AppointmentTest.appointmentDto1();
         inputApointmentDto.setId(0L); // reset id
@@ -103,7 +103,7 @@ public class AppointmentServiceUnitTest {
     }
 
     @Test
-    public void givenUser_whenCreateUser_thenRepositoryCalled() {
+    public void givenAppointment_whenCreateAppointment_thenRepositoryCalled() {
         // arrange
         AppointmentDto appointmentDto = AppointmentTest.appointmentDto3();
 
@@ -118,7 +118,7 @@ public class AppointmentServiceUnitTest {
     }
 
     @Test
-    public void givenUserAndValidId_whenUpdate_thenUserReturned() {
+    public void givenAppointmentAndValidId_whenUpdate_thenAppointmentReturned() {
         // arrange
         AppointmentDto inputAppointmentDto = AppointmentTest.appointmentDto1();
         inputAppointmentDto.setId(0L); // reset id
