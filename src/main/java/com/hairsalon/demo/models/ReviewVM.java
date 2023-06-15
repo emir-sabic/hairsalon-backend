@@ -13,12 +13,15 @@ public class ReviewVM  {
     private String name;
     private String email;
     private String review;
+    private String username;
 
     public ReviewVM(Review review) {
         this.id = review.getId();
         this.email = review.getEmail();
         this.review = review.getReview();
         this.name = review.getName();
+        this.username = review.getUsername();
+
     }
 
 }

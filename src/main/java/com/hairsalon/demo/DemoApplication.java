@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfi
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@EnableJpaRepositories("com.hairsalon.demo.repositories")
+@EnableJpaRepositories("com.hairsalon.demo.*")
 @ComponentScan(basePackages = {"com.hairsalon.demo.*"})
 @SpringBootApplication(exclude = {SecurityAutoConfiguration.class})
 public class DemoApplication {

@@ -2,9 +2,13 @@ package com.hairsalon.demo.models.entities;
 
 import com.hairsalon.demo.models.ReviewVM;
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 @Table(name="reviews")
+@Getter
+@Setter
 public class Review {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,6 +22,10 @@ public class Review {
 
     @Column(name = "review")
     private String review;
+
+    @Column(name = "username")
+    private String username;
+
 
     public String getEmail() {
         return email;
@@ -39,6 +47,7 @@ public class Review {
         this.email = reviewVM.getEmail();
         this.review = reviewVM.getReview();
         this.name = reviewVM.getName();
+        this.username = reviewVM.getUsername();
     }
 
     public Review() {}
